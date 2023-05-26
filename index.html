@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PreviClima</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&family=Quicksand:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style/style.css">
+    <script src="js/script.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="caixa">
+            <input class="input-city" placeholder="Digite o Nome da Cidade" type="text" name="" id="">
+            <button>
+                <img class="img_buscar" src="https://www.svgrepo.com/show/488200/find.svg" alt="Buscar"
+                    onclick="clique()">
+            </button>
+        </div>
+
+        <div class="fundo">
+            <h2 class="cidade">Previsão do Tempo</h2><br>
+            <p class="temp">°C</p>
+
+            <div class="container_min">
+                <p class="clima"></p>
+                <img class="imgtemp" src="https://openweathermap.org/img/wn/04n.png" alt="icone_tempo">
+            </div>
+
+            <p class="umidade">Umidade:</p>
+        </div>
+    </div>
+
+</body>
+
+</html>
