@@ -8,36 +8,56 @@
     <title>PreviClima</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&family=Quicksand:wght@300;400;500;600;700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="js/script.js"></script>
 </head>
 
 <body>
     <div class="container">
         <div class="caixa">
-            <input class="input-city" placeholder="Digite o Nome da Cidade" type="text" name="" id="">
-            <button>
-                <img class="img_buscar" src="https://www.svgrepo.com/show/488200/find.svg" alt="Buscar"
-                    onclick="clique()">
-            </button>
-        </div>
-
-        <div class="fundo">
-            <h2 class="cidade">Previsão do Tempo</h2><br>
-            <p class="temp">°C</p>
-
-            <div class="container_min">
-                <p class="clima"></p>
-                <img class="imgtemp" src="https://openweathermap.org/img/wn/04n.png" alt="icone_tempo">
+            <h2>Confira o clima na sua cidade: </h2>
+            <div>
+                <input placeholder="Digite o nome da cidade" type="text" id="city-input">
+                <button id="search">
+                    <div class="fa-solid fa-magnifying-glass"></div>
+                </button>
             </div>
-
-            <p class="umidade">Umidade:</p>
+        </div>
+        <div class="weather-data">
+            <h2>
+                <i class="fa-solid fa-location-dot"></i>
+                <span id="city"></span>
+                <img src="" id="country" alt="">
+            </h2>
+            <p id="temperature"><span></span>&deg;C</p>
+            <div id="description-container">
+                <p id="description"> </p>
+                <img src="" alt="tempo" id="weather-icon">
+            </div>
+            <div id="details-container">
+                <p id="umidity">
+                    <i class="fa-solid fa-droplet"></i>
+                    <span></span>
+                </p>
+                <p id="wind">
+                    <i class="fa-solid fa-wind"></i>
+                    <span id="vento"></span>
+                </p>
+            </div>
         </div>
     </div>
-
+    </div>
 </body>
 
 </html>
