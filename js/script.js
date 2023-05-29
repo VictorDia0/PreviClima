@@ -1,3 +1,4 @@
+async function enter(){;
 document.addEventListener("DOMContentLoaded", async function() {
     const apikey = "95c6ceb74e2289cd909fd49d08f2e576";
   
@@ -34,4 +35,5 @@ document.addEventListener("DOMContentLoaded", async function() {
     }
     
     document.querySelector("#city-input").addEventListener("keypress", pressionarEnter);
-});
+})};
+enter();
