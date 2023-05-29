@@ -1,11 +1,9 @@
 async function enter() {
-    ;
     document.addEventListener("DOMContentLoaded", async function () {
         const apikey = "95c6ceb74e2289cd909fd49d08f2e576";
 
         async function ColocarNaTela(dados) {
             console.log(dados);
-
             document.querySelector("#city").innerHTML = dados.name;
             document.querySelector("#country").src = "https://flagsapi.com/" + dados.sys.country + "/flat/64.png";
             document.querySelector("#temperature").innerHTML = parseInt(dados.main.temp) + "&deg;C";
@@ -15,12 +13,12 @@ async function enter() {
             document.querySelector("#winds").innerHTML = dados.wind.speed + "Km/h";
         }
 
-        const weatherContaineir = document.querySelector("#weather-data");
+        const weatherContainer = document.querySelector("#weather-data");
 
         async function clique() {
             let cidade = document.querySelector("#city-input").value;
             await buscarCidade(cidade);
-            weatherContaineir.classList.remove("hide");
+            weatherContainer.classList.remove("hide");
         }
 
         async function buscarCidade(cidade) {
@@ -36,6 +34,7 @@ async function enter() {
         }
 
         document.querySelector("#city-input").addEventListener("keypress", pressionarEnter);
-    })
-};
+    });
+}
+
 enter();
