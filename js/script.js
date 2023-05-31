@@ -43,23 +43,12 @@ async function enter() {
       }
     }
 
-    async function clique() {
-      let cidade = document.querySelector("#city-input").value;
-      await buscarCidade(cidade);
-    }
-    
     const weatherContainer = document.querySelector("#weather-data");
 
     async function clique() {
       let cidade = document.querySelector("#city-input").value;
       await buscarCidade(cidade);
       weatherContainer.classList.remove("hide");
-    }
-
-    async function buscarCidade(cidade) {
-      const dados = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${cidade}&appid=${apikey}&lang=pt_br&units=metric`).then(response => response.json());
-
-      await ColocarNaTela(dados);
     }
 
     function pressionarEnter(event) {
