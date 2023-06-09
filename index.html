@@ -24,39 +24,42 @@
 </head>
 
 <body>
-    <div class="container">
-        <div class="form">
-            <h3>PreviClima</h3>
-            <div class="form-input-container">
-                <input type="text" placeholder="Digite o nome da cidade" id="city-input"/>
-                <button id="search" onclick="clique()">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                </button>
-            </div>
+    <header class="cabecalho">
+        <div class="cabecalho-text">
+            <p>PREVICLIMA</p>
         </div>
-        <div id="weather-data" class="hide">
-            <h2>
-                <i class="fa-solid fa-location-dot" id="localizacao"></i>
-                <span id="city"></span>
-                <img src="" id="country"></img>
-            </h2>
-            <p id="temperature"><span></span></p>
-            <div id="description-container">
-                <img id="weather-icon" src="" alt="Condições atuais">
+        <div class="form-header">
+            <input type="text" placeholder="Digite o nome da cidade" id="city-input" />
+            <button id="search-button" onclick="clique()">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+        </div>
+    </header>
+
+    <hr>
+    <section>
+        <div class="container">
+            <div id="weather-data" class="hide">
+                <h2>
+                    <span id="city"></span>
+                    <img src="" id="country"></img>
+                </h2>
                 <p id="description"></p>
-            </div>
-            <div id="details-container">
-                <p id="umidity">
-                    <i class="fa-solid fa-droplet"></i>
-                    <span id="umiditys"></span>
-                </p>
-                <p id="wind">
-                    <i class="fa-solid fa-wind"></i>
-                    <span id="winds"></span>
-                </p>
+                <p id="temperature"><span></span></p>
+                
+                <div id="details-container">
+                    <p id="umidity">
+                        <i class="fa-solid fa-droplet" id="gota"></i>
+                        <span id="umiditys"></span>
+                    </p>
+                    <p id="wind">
+                        <i class="fa-solid fa-wind" id="vento"></i>
+                        <span id="winds"></span>
+                    </p>
+                </div>
             </div>
         </div>
-    </div>
+    </section>
 </body>
 
 
